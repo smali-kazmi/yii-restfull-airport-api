@@ -77,5 +77,18 @@ CREATE TABLE `airport` (
 ````
 
 
+Users
+-------------
 
+ 1. guest
+ 2. admin (admin/admin)
+ 3. user (demo/demo)
 
+Routes
+-------------
+
+ 1. GET /airports: list all airport page by page; (guest | admin | user)
+ 2. GET /searchAirport?airport_code=? : list all airport page by page; (guest | admin | user)
+ 4. POST /airports: create a new airport (admin | user);
+ 5. GET /airports/123: return the details of the airport 123 (admin | user);
+ 8. DELETE /airports/123: delete the user 123;
