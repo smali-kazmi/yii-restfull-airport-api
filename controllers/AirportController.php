@@ -26,11 +26,6 @@ class AirportController extends ActiveController
                     'roles' => ['?'],
                 ],
                 [
-                    'allow' => false,
-                    'actions' => ['update', 'delete', 'options'],
-                    'roles' => ['user'],
-                ],
-                [
                     'allow' => true,
                     'actions' => ['index', 'search', 'view', 'create', 'update', 'delete', 'options'],
                     'roles' => ['admin'],
